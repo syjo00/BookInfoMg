@@ -60,10 +60,7 @@
 	%>
 	<%=str %>
 	 <p align="center">	 
-	 <button type="button" onclick="location.href='Sample1_customerinsertform.jsp'">데이터 입력</button>&nbsp;&nbsp;
-	 <button type="button" onclick="location.href='Sample1_customerupdateform.jsp'">데이터 수정</button>&nbsp;&nbsp;
-	 <button type="button" onclick="location.href='Sample1_customerdeleteform.jsp'">데이터 삭제</button>&nbsp;&nbsp;
-	 <button type="button" onclick="location.href='Sample1_customerselectform.jsp'">데이터 조회</button>&nbsp;&nbsp;
+	 <button type="button" onclick="location.href='main.jsp'">메인메뉴</button>&nbsp;&nbsp;
 	 </p>
 </body>
 </html>
