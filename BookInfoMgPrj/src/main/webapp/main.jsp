@@ -36,7 +36,7 @@
             <!-- 메뉴바 -->
             <div class="menu-bar">
                 <a href="insert.jsp">입력</a>
-                <a href="select.jsp">조회</a>
+                <a href="ListPro.jsp">조회</a>
                 <a href="update.jsp">수정</a>
                 <a href="delete.jsp">삭제</a>
             </div>
