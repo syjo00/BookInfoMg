@@ -4,7 +4,8 @@
 <%@page import="javax.servlet.jsp.tagext.TryCatchFinally"%>
 <%@page import="java.sql.PreparedStatement"%>   
 <%@page import ="java.sql.*" %> 
-
+<%@ include file="DBconnection.jsp" %>
+<%@ include file="main.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,7 @@
 </head>
 <style>
 	    /* 검색 입력 필드와 셀렉트 박스 스타일 */
-    #searchType  {
+    #sel  {
     	margin-top : 15px;
         width: 100px;
         height: 30px;        
@@ -25,6 +26,7 @@
     
 </style>
 <body>
+
 <h2>Book Information List Search</h2>
 	<table width="800" border="1" align="center" >
 		<tr align="center">
@@ -38,7 +40,7 @@
 		</tr>
 	<%
 	
-	Connection conn = null;
+	
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	
@@ -52,7 +54,7 @@
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		conn = DriverManager.getConnection(url, dbId, dbPass);
 		
-		String sql = "select * from books_info";
+		String sql = "select * from BIDB";
 		pstmt = conn.prepareStatement(sql);
 		rs = pstmt.executeQuery();
 		
@@ -103,13 +105,14 @@
 	</table>
 	
 	
-	<form action="./ListPro.jsp" method="get">
-		<select id="sel" name="sel">
-		   <option name="sel" value="title">Title</option>
-		   <option name="sel" value="author">Author</option>
-		</select>
-	 <input type="text" name="want">
-	 <input type="submit" value="search">
+<form method="get" action="./ListPro.jsp">
+<select id="sel" name="sel" style="margin-left : 350px;">
+      <option name="sel" value="title">Title</option>
+      <option name="sel" value="author">Author</option>
+   </select>
+<input type="text" name="want">
+<input type="submit" value="search">
+</form>
 
 	
 </body>

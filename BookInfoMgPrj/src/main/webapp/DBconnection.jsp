@@ -16,7 +16,7 @@
 	String dbPassword = "1234";
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	conn = DriverManager.getConnection(Url, dbId, dbPassword);
-	out.print("DB 연결 성공");
+	System.out.println("DB 연결 성공");
 	}catch (Exception e){
 		e.printStackTrace();
 	}

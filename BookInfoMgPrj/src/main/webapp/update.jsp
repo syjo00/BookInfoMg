@@ -1,15 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="main.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
 <body style = "text-align : center">
+
 	<h2>BIDB테이블에 레코드 추가</h2>
-	<form method="post" action="updatePro.jsp" style = "text-align : center">
-		
+	<form method="post" action="updatePro.jsp" style = "text-align : center">		
 		ISBN: <input type="text" name="isbn" maxlength="20"><br>
 		책제목: <input type="text" name="title" maxlength="50"><br>
 		저자: <input type="text" name="author" maxlength="6"><br>

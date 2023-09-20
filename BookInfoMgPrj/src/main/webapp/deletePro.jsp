@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*"%>
-<%@ include file="DBConnection.jsp"%>
+<%@ include file="DBconnection.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +72,7 @@
 	<button type="button" onclick="location.href='insert.jsp'">데이터 입력</button>&nbsp;&nbsp;
 	 <button type="button" onclick="location.href='update.jsp'">데이터 수정</button>&nbsp;&nbsp;
 	 <button type="button" onclick="location.href='delete.jsp'">데이터 삭제</button>&nbsp;&nbsp;
-	 <button type="button" onclick="location.href='select.jsp'">데이터 조회</button>&nbsp;&nbsp;
+	 <button type="button" onclick="location.href='list.jsp'">데이터 조회</button>&nbsp;&nbsp;
 	 </p>
 </body>
 </html>

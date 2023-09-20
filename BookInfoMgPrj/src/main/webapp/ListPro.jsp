@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ page import="java.sql.*" %>
-<%@ include file="DBConnection.jsp" %>
+<%@ include file="DBconnection.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +37,9 @@
 		String want= request.getParameter("want");
 		
 		ResultSet rs=null;
+		PreparedStatement pstmt = null;
 		String sql;
+		
 		try{
 			if(sel.equals("title")){
 				sql="select * from BIDB where "+sel+"  like ?";
@@ -101,7 +103,7 @@
 	%>
 </table>
 <form action="./ListPro.jsp" method="get">
-	<select id="sel" name="sel">
+	<select id="sel" name="sel" style="margin-left : 350px;">
 		<option name="sel" value="title">Title</option>
 		<option name="sel" value="author">Author</option>
 	</select>
