@@ -41,7 +41,7 @@
 			session.setAttribute("user_id", id);
  			session.setAttribute("user_name", pw); 
  			
-			 response.sendRedirect("loginMain.jsp");
+			 response.sendRedirect("main.jsp");
 		}else { // 로그인 실패
 /* 			out.println("아이디와 비밀번호를 확인하세요"); */
  			response.sendRedirect("login_fail.jsp"); 
