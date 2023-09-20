@@ -26,6 +26,8 @@
 </style>
 </head>
 <body>
+<%String  id = (String)session.getAttribute("id"); %>
+<%=id %> <button onclick = "location.href = 'login.jsp'">로그아웃</button>
 <div id="wrap">
 
     <header id="header">
@@ -36,7 +38,7 @@
                 <a href="insert.jsp">입력</a>
                 <a href="select.jsp">조회</a>
                 <a href="update.jsp">수정</a>
-                <a href="deleteForm.jsp">삭제</a>
+                <a href="delete.jsp">삭제</a>
             </div>
         </div>
     </header>
