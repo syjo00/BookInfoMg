@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<<<<<<< HEAD
-=======
-<%@ include file="DBconnection.jsp"%>
->>>>>>> 2c9422f8be2ca22d2479dd1ac06a174dbe9fd9bb
+<%@ include file="DBConnection.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,14 +29,14 @@
 <%String  id = (String)session.getAttribute("id"); %>
 <%=id %> <button onclick = "location.href = 'login.jsp'">로그아웃</button>
 <div id="wrap">
-	
+
     <header id="header">
         <div class="header_area box_inner clear">	
-          <!--   <h1>메뉴바</h1> -->
+            <h1>메뉴바</h1>
             <!-- 메뉴바 -->
             <div class="menu-bar">
                 <a href="insert.jsp">입력</a>
-                <a href="list.jsp">조회</a>
+                <a href="select.jsp">조회</a>
                 <a href="update.jsp">수정</a>
                 <a href="delete.jsp">삭제</a>
             </div>

@@ -68,11 +68,15 @@
 	%>
 	<%=str %>
 	<p align="center">
+<<<<<<< HEAD
 	<button onclick="location='main.jsp'">메인</button>
 	<button type="button" onclick="location.href='insert.jsp'">데이터 입력</button>&nbsp;&nbsp;
 	 <button type="button" onclick="location.href='update.jsp'">데이터 수정</button>&nbsp;&nbsp;
 	 <button type="button" onclick="location.href='delete.jsp'">데이터 삭제</button>&nbsp;&nbsp;
 	 <button type="button" onclick="location.href='list.jsp'">데이터 조회</button>&nbsp;&nbsp;
+=======
+	<button type="button" onclick="location.href='main.jsp'">데이터 입력</button>&nbsp;&nbsp;
+>>>>>>> 2c9422f8be2ca22d2479dd1ac06a174dbe9fd9bb
 	 </p>
 </body>
 </html>
